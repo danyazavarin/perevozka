@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Main_list</title>
     <link href="style.css" rel="stylesheet">
 </head>
@@ -17,8 +20,22 @@
         </ul>
     </nav>
 </header>
-<main>
-
-</main>
+<form action="" id="main_form" method="post">
+    <label for="name">Name:</label>
+    <input id="name" name="name" placeholder="name" type="text"><br><br>
+    <label for="pass">Password:</label>
+    <input id="pass" name="pass" placeholder="password" type="password"><br><br>
+    <label for="repass">Repeat password:</label>
+    <input id="repass" name="repass" placeholder="repeat password" type="password"><br><br>
+    <span>Sex:</span>
+    <input id="male" name="state" type="radio" value="Male">
+    <label for="male">Male</label>
+    <input id="female" name="state" type="radio" value="Female">
+    <label for="female">Female</label><br><br>
+    <div id="error" style="color:red;"></div>
+    <input name="submit" type="submit" value="submit">
+</form>
+<script src="main.js"></script>
 </body>
 </html>
+
