@@ -1,8 +1,8 @@
-document.getElementById("main_form").addEventListener("submit", checkForm);
+let form = document.querySelector("#main_form");
+form.addEventListener("submit", checkForm);
 
 function checkForm(event) {
     event.preventDefault();
-    let form = document.querySelector("#main_form");
     let name = form.name.value;
     let pass = form.pass.value;
     let repass = form.repass.value;
